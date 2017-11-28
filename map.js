@@ -17,8 +17,7 @@ function main() {
         zoom: setInitialZoom(),
         zoomControl: false,
         attributionControl: true,
-        legends: false,
-        layer_selector: false,
+        legends: false
     };
 
     var map = L.map('map', mapOptions);
