@@ -85,22 +85,22 @@ function main() {
         }, 2000);
         setTimeout(function() {
             map.removeLayer(zellen2017)
-            document.getElementById("text").innerHTML = "<center><p><b>So nach 2017</b></p></center>";
+            document.getElementById("text").innerHTML = "<center><p><b>So nach 2017.</b></p></center>";
         }, 4000);
         setTimeout(function() {
             map.removeLayer(zellen2018)
-            document.getElementById("text").innerHTML = "<center><p><b>So soll es nach 2018 aussehen</b></p></center>";
+            document.getElementById("text").innerHTML = "<center><p><b>So soll es nach 2018 aussehen.</b></p></center>";
         }, 6000);
         setTimeout(function() {
             map.removeLayer(zellenRest)
-            document.getElementById("text").innerHTML = "<center><p><b>Und so hoch ist der geschätzte Bedarf an Telefonzellen</b></p></center>";
+            document.getElementById("text").innerHTML = "<center><p><b>Und so hoch ist der geschätzte Bedarf an Telefonzellen.</b></p></center>";
         }, 8000);
         setTimeout(function() {
             zellen2016.addTo(map)
             zellen2017.addTo(map)
             zellen2018.addTo(map)
             zellenRest.addTo(map)
-            document.getElementById("text").innerHTML = "<center><p><b>So sieht das Telefonzellennetz in Heilbronn derzeit aus</b></p></center>";
+            document.getElementById("text").innerHTML = "<center><p><b>So sieht das Telefonzellennetz in Heilbronn derzeit aus.</b></p></center>";
         }, 10000)
     }
 
