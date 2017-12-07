@@ -82,30 +82,30 @@ function main() {
         setTimeout(function() {
             map.removeLayer(zellen2016)
             document.getElementById("text").innerHTML = "<center><p><b>So hätte das Netz nach 2016 aussehen sollen.</b></p></center>";
-        }, 2000);
+        }, 4000);
         setTimeout(function() {
             map.removeLayer(zellen2017)
             document.getElementById("text").innerHTML = "<center><p><b>So nach 2017.</b></p></center>";
-        }, 4000);
+        }, 8000);
         setTimeout(function() {
             map.removeLayer(zellen2018)
             document.getElementById("text").innerHTML = "<center><p><b>So soll es nach 2018 aussehen.</b></p></center>";
-        }, 6000);
+        }, 12000);
         setTimeout(function() {
             map.removeLayer(zellenRest)
             document.getElementById("text").innerHTML = "<center><p><b>Und so hoch ist der geschätzte Bedarf an Telefonzellen.</b></p></center>";
-        }, 8000);
+        }, 16000);
         setTimeout(function() {
             zellen2016.addTo(map)
             zellen2017.addTo(map)
             zellen2018.addTo(map)
             zellenRest.addTo(map)
             document.getElementById("text").innerHTML = "<center><p><b>So sieht das Telefonzellennetz in Heilbronn derzeit aus.</b></p></center>";
-        }, 10000)
+        }, 20000)
     }
 
     loop();
-    setInterval(loop, 10000)
+    setInterval(loop, 20000)
 
 
     function disableMap() {
