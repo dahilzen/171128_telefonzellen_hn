@@ -89,12 +89,12 @@ function main() {
         }, 8000);
         setTimeout(function() {
             map.removeLayer(zellen2018)
-            document.getElementById("text").innerHTML = "<center><p><b>So soll es nach 2018 aussehen.</b></p></center>";
+            document.getElementById("text").innerHTML = "<center><p><b>So könnte es nach 2018 aussehen. Diese 21 Zellen sind die einzigen, die noch mehr als 50 Euro Gewinn abwerfen.</b></p></center>";
         }, 12000);
-        setTimeout(function() {
+/*        setTimeout(function() {
             map.removeLayer(zellenRest)
-            document.getElementById("text").innerHTML = "<center><p><b>Und so hoch ist der geschätzte Bedarf an Telefonzellen.</b></p></center>";
-        }, 16000);
+            document.getElementById("text").innerHTML = "<center><p><b>Und so hoch ist der geschätzte Bedarf an Telefonzellen</b></p></center>";
+        }, 8000);*/
         setTimeout(function() {
             zellen2016.addTo(map)
             zellen2017.addTo(map)
