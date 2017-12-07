@@ -1,7 +1,7 @@
 function setInitialZoom() {
     var viewportWidth = window.innerWidth;
     var initZoom;
-    if (viewportWidth < [800]) {
+    if (viewportWidth < [600]) {
         initZoom = 11;
     } else {
         initZoom = 12;
@@ -9,11 +9,24 @@ function setInitialZoom() {
     return initZoom;
 };
 
+function setInitialCenter() {
+    var viewportWidth = window.innerWidth;
+    var initCenter;
+    if (viewportWidth < [600]) {
+       initCenter = [49.1800738,9.1755168];
+    } else {
+        initCenter = [49.1507310, 9.1873570];
+    }
+    return initCenter;
+};
+
 function main() {
+
+    console.log(window.innerWidth);
 
 	// Kartenoptionen bestimmen
     var mapOptions = {
-        center: [49.1507310, 9.1873570],
+        center: setInitialCenter(),
         zoom: setInitialZoom(),
         zoomControl: false,
         attributionControl: true,
@@ -89,7 +102,7 @@ function main() {
         }, 8000);
         setTimeout(function() {
             map.removeLayer(zellen2018)
-            document.getElementById("text").innerHTML = "<center><p><b>So könnte es nach 2018 aussehen. Diese 21 Zellen sind die einzigen, die noch mehr als 50 Euro Gewinn abwerfen.</b></p></center>";
+            document.getElementById("text").innerHTML = "<center><p><b>So könnte es nach 2018 aussehen. Diese 21 Zellen sind die einzigen, die noch mehr als 50 Euro Umsatz generieren.</b></p></center>";
         }, 12000);
 /*        setTimeout(function() {
             map.removeLayer(zellenRest)
